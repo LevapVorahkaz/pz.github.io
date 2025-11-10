@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en" style="background-color:#e9d8a6 !important;">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pavel Zakharov — Personal page</title>
+  <meta name="description" content="Personal academic webpage of Pavel Zakharov, PhD student at TU Dortmund." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>∑</text></svg>'>
+  <style>
+    :root {
+      --bg:#e9d8a6; /* sand */
+      --fg:#0f0f0f;
+      --muted:#5c5c5c;
+      --link:#0a58ca;
+      --active:#a88f00;
+      --border:#d7c76a;
+      --max:860px;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      background:var(--bg) !important;
+      color:var(--fg);
+      font:17px/1.6 Georgia, Cambria, 'Times New Roman', Times, serif;
+    }
+    .wrap{max-width:var(--max);margin:0 auto;padding:clamp(16px,2.5vw,28px)}
+    header{display:flex;align-items:center;gap:14px;margin:24px 0}
+    h1{font-size:clamp(26px,3.5vw,34px);margin:0}
+    .muted{color:var(--muted)}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .nav{display:flex;justify-content:center;gap:48px;margin:10px 0 25px;font-size:1.2em;font-family:Georgia, serif}
+    .nav a{color:var(--link);text-decoration:underline;cursor:pointer;}
+    .nav a.active{font-weight:bold;text-decoration:underline;}
+
+    .panel{padding:18px 0;display:none;}
+    .panel.active{display:block;}
+
+    h2{font-size:20px;margin:6px 0 10px;border-bottom:1px solid var(--border);padding-bottom:6px;font-variant-caps:small-caps;letter-spacing:.4px}
+    #publications ul{padding-left:1.2em}
+    #publications li{margin:8px 0}
+    .teach-year{font-size:18px;font-weight:600;margin:10px 0 6px}
+    .teach-institution{color:var(--muted);margin:0 0 6px}
+    .teach-list{margin:0 0 14px 0;padding-left:1.1em}
+  </style>
+</head>
+<body style="background-color:#e9d8a6 !important;">
+<div class="wrap">
+  <header>
+    <h1>Pavel Zakharov</h1>
+    <p class="muted">PhD Student, Faculty of Mathematics, TU Dortmund</p>
+  </header>
+
+  <nav class="nav">
+    <a class="nav-link active" href="#about" data-target="panel-about">About</a>
+    <a class="nav-link" href="#pubs" data-target="panel-pubs">Publications & Talks</a>
+    <a class="nav-link" href="#teaching" data-target="panel-teaching">Teaching</a>
+  </nav>
+
+  <section id="panel-about" class="panel active">
+    <h2>About</h2>
+    <p>I am a PhD student in the Faculty of Mathematics at TU Dortmund. I work on probabilistic methods in theoretical computer science, especially random structures (random graphs and SAT) and simple algorithms that perform well on them.</p>
+    <p>Before Dortmund, I completed an MSc in Data Science/Mathematics in Machine Learning at the Higher School of Economics (HSE) & Skoltech (2021–2023), and a BSc in Applied Mathematics and Informatics at HSE (2017–2021).</p>
+    <p>Links: <a href="https://scholar.google.ru/citations?user=cHZQXcgAAAAJ&hl=en">Google Scholar</a>
+    <h2>Contact</h2>
+    <p>Email: <span id="em">pavel.zakharov [at] tu-dortmund.de</span></p>
+    <p>Office: Otto-Hahn Str. 12, Dortmund, Germany.</p>
+  </section>
+
+  <section id="panel-pubs" class="panel">
+    <h2>Publications</h2>
+    <ul>
+      <li>P. Berenbrink, A. Coja-Oghlan, C. Cooper, T. Götte, L. Hintze, <strong>P. Zakharov</strong>. <em>WalkSAT is linear on random 2-SAT</em>. SIAM Journal on Discrete Mathematics, 2025.</li>
+      <li>D. Shabanov, <strong>P. Zakharov</strong>. <em>Fractional colourings of random hypergraphs</em>. Russian Mathematical Surveys, 2023.</li>
+      <li>D. Shabanov, <strong>P. Zakharov</strong>. <em>Asymptotic normality of the giant component size in a random bipartite graph</em>. Trudy MIPT, 2023.</li>
+      <li>D. Shabanov, <strong>P. Zakharov</strong>. <em>On the maximal cut in a random hypergraph</em>. Dokl. RAN, 2021.</li>
+    </ul>
+    <h3>Preprints</h3>
+    <ul>
+      <li>A. Chatterjee, A. Coja-Oghlan, N. Müller, C. Riddlesden, M. Rolvien, <strong>P. Zakharov</strong>, H. Zhu. <em>The number of random 2-SAT solutions is asymptotically log-normal</em>. arXiv:2405.03302, 2024.</li>
+      <li>A. Chatterjee, A. Coja-Oghlan, C. Greenhill, V. Pfenninger, M. Rolvien, <strong>P. Zakharov</strong>, K. Zampetakis. <em>The random k-SAT Gibbs uniqueness threshold revisited</em>. arXiv:2506.01359, 2025.</li>
+    </ul>
+    <h2>Talks</h2>
+    <ul>
+      <li>22nd International Conference on Random Structures and Algorithms (RSA), Vienna, Austria — 2025.</li>
+      <li>28th International Conference on Randomization and Computation (RANDOM), London, United Kingdom — 2024.</li>
+      <li>European Conference on Combinatorics, Graph Theory and Applications (EuroComb), Online — 2021.</li>
+    </ul>
+  </section>
+
+  <section id="panel-teaching" class="panel">
+    <h2>Teaching</h2>
+    <div>
+      <div class="teach-year">2023/24</div>
+      <p class="teach-institution">Higher School of Economics (HSE), Faculty of Computer Science</p>
+      <ul class="teach-list">
+        <li>Convex Programming and Approximation Algorithms</li>
+      </ul>
+    </div>
+    <div>
+      <div class="teach-year">2022/23</div>
+      <p class="teach-institution">Higher School of Economics (HSE), Faculty of Computer Science</p>
+      <ul class="teach-list">
+        <li>Mathematical Statistics</li>
+        <li>Probability Theory</li>
+        <li>Theoretical Computer Science</li>
+        <li>Theory of Computation</li>
+      </ul>
+    </div>
+    <div>
+      <div class="teach-year">2021/22</div>
+      <p class="teach-institution">Higher School of Economics (HSE), Faculty of Computer Science</p>
+      <ul>
+        <li>Algorithms and Data Structures</li>
+        <li>Probability Theory and Mathematical Statistics</li>
+        <li>Theoretical Computer Science</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="y">2025</span> Pavel Zakharov. Last updated: <time datetime="2025-11-10">10 Nov 2025</time>.</p>
+  </footer>
+</div>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const panels = document.querySelectorAll('.panel');
+
+    function showPanel(targetId) {
+      panels.forEach(panel => {
+        panel.style.display = panel.id === targetId ? 'block' : 'none';
+        panel.classList.toggle('active', panel.id === targetId);
+      });
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('data-target') === targetId);
+      });
+    }
+
+    // Ensure background is sand even if external CSS tries to override
+    document.documentElement.style.setProperty('background-color', '#e9d8a6', 'important');
+    document.body.style.setProperty('background-color', '#e9d8a6', 'important');
+
+    // Default: show only About panel
+    showPanel('panel-about');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('data-target');
+        showPanel(targetId);
+        history.replaceState(null, '', this.getAttribute('href'));
+      });
+    });
+
+    // On load, open correct panel if hash exists
+    const hash = location.hash;
+    if (hash) {
+      const activeLink = document.querySelector(`.nav-link[href="${hash}"]`);
+      if (activeLink) activeLink.click();
+    }
+  });
+</script>
+</body>
+</html>
